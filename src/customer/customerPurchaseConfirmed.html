@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/normlize.css" />
+        <link href="../styles/output.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Purchase Confirmation</title>
+    </head>
+
+
+    <body class="flex flex-col min-h-screen bg-gray-100">
+        <!-- Header Section -->
+        <header class="header bg-white py-2 md:py-4">
+            <div class="container mx-auto flex items-center justify-between space-x-4">
+                <div class="flex items-center space-x-2 mr-auto">
+                    <img
+                        class="logo h-8 w-8 md:h-12 md:w-12"
+                        src="../assets/logo.jpg"
+                        alt="Service Pro Logo"
+                    />
+                    <a href="myAccount">
+                        <h1
+                        class="company-name-place text-lg md:text-2xl font-bold"
+                        style="color: #10cab7"
+                        ></h1>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-2 ml-auto">
+                    <a
+                        href="myAccount"
+                        class="text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded"
+                    >
+                        <i class="fas fa-user"></i> My Account
+                    </a>
+            
+                    <a
+                        href="/api/logout"
+                        class="text-white bg-red-600 hover:bg-red-700 px-4 py-2 rounded"
+                    >
+                        Log out
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <main class="container mx-auto py-6 flex-grow">
+            <div class="confirmation-container">
+                <h1>Thank You for Your Purchase!</h1>
+                <p>Your service(s) have been successfully booked.</p>
+                
+                <div id="service-details" class="service-details" style="text-align: center;">
+                    <!-- Selected services will be injected here -->
+                </div>
+                
+                <a href="purchaseServices" class="back-link">Back to Browsing Services</a>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="py-2 md:py-4 text-center bg-[#2c4755]">
+            <p class="text-white">
+                © 2024
+                <span class="company-name-place"  style="color: #10cab7">Service Pro</span>
+                - All Rights Reserved
+            </p>
+        </footer>
+            
+        <script src="../js/customerPurchasedConfirmed.js"></script>
+            
+</html>
+        
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+    .confirmation-container {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #2ecc71;
+    }
+    .service-details {
+        margin-top: 20px;
+        text-align: left;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 30px;
+        color: #2980b9;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .back-link:hover {
+        text-decoration: underline;
+    }
+</style>

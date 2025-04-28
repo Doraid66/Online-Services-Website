@@ -2,11 +2,7 @@
 
 This is a group project for the SOEN 287 class at Concordia University. The project is a web application that allows companies to offer services to customers and customers to book those services.
 
-| Name          | Student ID |
-| ------------- | ---------- |
-| Hedi Belkahia | #40256678  |
-| Durid Danhash | #40262962  |
-| Jakob Cote    | #40177325  |
+
 
 ### Technologies used
 
